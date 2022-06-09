@@ -1,10 +1,13 @@
 import React from 'react';
+import Products from './components/Products/Products';
 
 // shorcut: rafce 
 
 const App = () => {
   return (
-    <div>E-commerce</div>
+    <div>
+      <Products />
+    </div>
   )
 }
 
