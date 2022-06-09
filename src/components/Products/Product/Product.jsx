@@ -1,8 +1,11 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import useStyles from "./styles";
 
 const Product = ({product}) => {
+    const classes = useStyles();
+
   return (
     <Card className={classes.root}>
         <CardMedia className={classes.media} image='' title={product.name} />
