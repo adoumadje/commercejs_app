@@ -1,15 +1,17 @@
-import { makeStyles } from "@mui/styles";
-
-export default makeStyles(() => ({
+export const styles = {
     root: {
         maxWidth: '100%',
     },
     media: {
         height: 0,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%', 
     },
-    cardActions: {
+    cardContent: {
         display: 'flex',
         justifyContent: 'space-between',
     },
-}))
+    cardActions: {
+        display: 'flex',
+        justifyContent: 'flex-end',
+    },
+}
