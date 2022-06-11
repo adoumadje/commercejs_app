@@ -3,7 +3,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import {styles} from "./styles";
 
-const Product = ({product}) => {
+const Product = ({product, onAddToCart }) => {
   return (
     <Card sx={styles.root}>
         <CardMedia sx={styles.media} image={product.image.url} title={product.name} />
@@ -19,7 +19,7 @@ const Product = ({product}) => {
             </div>
         </CardContent>
         <CardActions disableSpacing sx={styles.cardActions}>
-            <IconButton aria-label='Add to Cart'>
+            <IconButton aria-label='Add to Cart' onClick={() => onAddToCart(product.id, 1)} >
                 <AddShoppingCartIcon />
             </IconButton>
         </CardActions>
