@@ -12,10 +12,10 @@ export const styles = {
         width: 'auto',
         marginLeft: '30%',
         marginRight: '30%',
-        [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
-            width: 600,
-            marginLeft: 'auto',
-            marginRight: 'auto',
+        [theme.breakpoints.down('md')]: {
+            width: '100%',
+            marginLeft: theme.spacing(2),
+            marginRight: theme.spacing(2),
         },
     },
     paper: {
